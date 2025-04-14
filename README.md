@@ -25,7 +25,7 @@
 
 ## 🌻Acknowledgement
 
-Our code of training module is referenced and adapted from [StableToolbench](https://github.com/THUNLP-MT/StableToolBench), [Aflow](https://github.com/FoundationAgents/AFlow), [Draft](https://github.com/quchangle1/DRAFT). And the Dataset is collected from [ToolBench](https://github.com/openbmb/toolbench?tab=readme-ov-file), [HotpotQA](). Our end-to-end evaluation module is based on [IPR](https://github.com/WeiminXiong/IPR), [Stable ToolBench](https://github.com/THUNLP-MT/StableToolBench), [HotpotQA](https://github.com/hotpotqa/hotpot). Thanks for their great contributions!
+Our code of training module is referenced and adapted from [StableToolbench](https://github.com/THUNLP-MT/StableToolBench), [Aflow](https://github.com/FoundationAgents/AFlow), [Draft](https://github.com/quchangle1/DRAFT). And the Dataset is collected from [ToolBench](https://github.com/openbmb/toolbench?tab=readme-ov-file), [HotpotQA](). Our end-to-end evaluation module is based on [Stable ToolBench](https://github.com/THUNLP-MT/StableToolBench), [HotpotQA](https://github.com/hotpotqa/hotpot). Thanks for their great contributions!
 
 
 
