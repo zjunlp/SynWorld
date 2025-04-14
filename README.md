@@ -84,7 +84,7 @@ python PlanAlign.py \
     --validate_nums 100 \
     --max_workers 16 \
     --mode test \
-    --test_round the_round_num_you_select(eg. 3) \
+    --test_round the_round_num_you_select(eg. 100 in our experiment) \
     --overwrite
   
 ```
