@@ -1,0 +1,1270 @@
+{
+    "0": {
+        "tool_name": "Vimeo",
+        "category_name": "Media",
+        "tool_guidelines": {
+            "GetRelatedChannels": {
+                "name": "GetRelatedChannels",
+                "description": "GetRelatedChannels for Vimeo is a comprehensive tool designed to identify and list channels on Vimeo that are relevant to a specified content category. It helps users discover new channels related to their interests by providing detailed information about each channel, including the number of subscribers and recent updates. This tool is ideal for users looking to explore content in specific niches and connect with similar communities on Vimeo.",
+                "required_parameters": [
+                    {
+                        "name": "category",
+                        "type": "STRING",
+                        "description": "Category name",
+                        "default": ""
+                    },
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json or xml or php",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    }
+                ]
+            },
+            "SearchVideos": {
+                "name": "SearchVideos",
+                "description": "SearchVideos is an advanced tool designed to help users discover and explore a wide range of video content across various platforms like Vimeo and YouTube. This tool not only facilitates the search for videos based on specific themes or keywords but also provides detailed information about the video creators, related works, and channels. Additionally, it offers functionalities to view related videos, get streaming and downloading options, and access rich metadata including video descriptions, duration, and quality. Ideal for content creators, researchers, and anyone interested in finding comprehensive video information and resources efficiently.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json/xml/php",
+                        "default": ""
+                    },
+                    {
+                        "name": "query",
+                        "type": "STRING",
+                        "description": "The search terms",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "user_id",
+                        "type": "STRING",
+                        "description": "The ID number or username of the user.",
+                        "default": ""
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    },
+                    {
+                        "name": "summary_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back more information.",
+                        "default": ""
+                    },
+                    {
+                        "name": "full_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back the full video information.",
+                        "default": ""
+                    },
+                    {
+                        "name": "sort",
+                        "type": "STRING",
+                        "description": "Method to sort by: relevant, newest, oldest, most_played, most_commented, or most_liked.",
+                        "default": ""
+                    }
+                ]
+            },
+            "GetRelatedPeople": {
+                "name": "GetRelatedPeople",
+                "description": "The GetRelatedPeople tool efficiently identifies and lists key individuals associated with a specific category. It is designed to provide insights into influential figures within various fields, making it easier for users to connect with experts and enthusiasts alike. This tool is particularly useful for users seeking to expand their network or knowledge in a particular area by pinpointing relevant contacts.\n\n**Usage Guidelines:**\n1. Specify the category for which you want to find related people.\n2. Ensure that the format parameter is correctly set to 'json' for optimal data parsing.\n3. Utilize the tool to enhance your understanding of major contributors in your field of interest.\n\n**Error Prevention Tips:**\n- Double-check the category input to ensure it accurately reflects the field you are investigating.\n- Verify that the format parameter is set to 'json' to avoid parsing errors.\n\n**Response Format Expectations:**\n- The tool returns a structured JSON response containing an array of related people, including their names, roles, and profile URLs, making it straightforward to access and utilize the information.",
+                "required_parameters": [
+                    {
+                        "name": "category",
+                        "type": "STRING",
+                        "description": "The name of the category.",
+                        "default": ""
+                    },
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json or xml or php",
+                        "default": "json"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    }
+                ]
+            },
+            "GetRelatedVideos": {
+                "name": "GetRelatedVideos",
+                "description": "GetRelatedVideos is a comprehensive tool designed to fetch related video content based on a specified video ID from Vimeo. It provides detailed metadata for each related video, including titles, descriptions, thumbnails, and additional video-specific data. This tool is ideal for users seeking to explore similar content or gather inspiration from related videos on Vimeo.\n\n(Note: The tool requires a valid video ID to function correctly and deliver precise results, ensuring users can access a curated list of videos related to their initial query.)",
+                "required_parameters": [
+                    {
+                        "name": "category",
+                        "type": "STRING",
+                        "description": "The name of the category.",
+                        "default": ""
+                    },
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json or xml or php",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    },
+                    {
+                        "name": "summary_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back more information.",
+                        "default": ""
+                    },
+                    {
+                        "name": "full_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back the full video information.",
+                        "default": ""
+                    }
+                ]
+            },
+            "GetChannelInfo": {
+                "name": "GetChannelInfo",
+                "description": "The GetChannelInfo tool retrieves comprehensive details about a specific Vimeo channel. It provides information such as the channel's name, description, owner details, and other relevant metadata, aiding users in understanding the scope and content of the channel. This tool is ideal for users seeking in-depth information about Vimeo channels, whether for research, collaboration, or general interest.\n\nNote: Ensure you have the correct channel ID as input to utilize this tool effectively.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json/xml/php",
+                        "default": ""
+                    },
+                    {
+                        "name": "channel_id",
+                        "type": "STRING",
+                        "description": "The numeric id of the channel or its url name.",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "GetAllCategories": {
+                "name": "GetAllCategories",
+                "description": "GetAllCategories for Vimeo: This tool retrieves a comprehensive list of all categories available on Vimeo. It simplifies content categorization and enhances user navigation by providing a well-structured output in JSON format. This functionality is essential for users looking to filter or search content based on specific categories. No additional parameters are required other than the 'format' to specify the output data format. Use this API to efficiently categorize and explore diverse video content on Vimeo.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json or xml or php",
+                        "default": "json"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "GetChannelVideos": {
+                "name": "GetChannelVideos",
+                "description": "GetChannelVideos: Efficiently retrieve a comprehensive list of videos from a specified Vimeo channel. This tool provides detailed information about each video, including titles, descriptions, upload dates, and more, in a user-friendly JSON format. Ideal for users needing detailed video data for content management or display purposes. Ensure you have the necessary Vimeo API credentials to utilize this API effectively.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json/xml/php",
+                        "default": ""
+                    },
+                    {
+                        "name": "channel_id",
+                        "type": "STRING",
+                        "description": "The numeric id of the channel or its url name.",
+                        "default": ""
+                    },
+                    {
+                        "name": "full_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back the full video information",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "user_id",
+                        "type": "STRING",
+                        "description": "The ID number or username of the user. A token may be used instead.",
+                        "default": ""
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "Number of items to show on each page. Max 50."
+                    },
+                    {
+                        "name": "summary_response",
+                        "type": "BOOLEAN",
+                        "description": "Set this parameter to get back more information.",
+                        "default": ""
+                    }
+                ]
+            },
+            "GetCategoryInfo": {
+                "name": "GetCategoryInfo",
+                "description": "GetCategoryInfo is a comprehensive tool designed to fetch detailed information about Vimeo channels and their videos. It enables users to retrieve channel details such as name, description, subscriber count, and category. Additionally, it can provide comments from specific videos within the channel. This tool is essential for users looking to gain insights into specific Vimeo channels and their content offerings.\n\nKey Features:\n- Retrieve channel information including name, description, and subscriber details.\n- Access comments from individual videos to gauge viewer engagement.\n- Identify the category of the channel to explore similar content.\n\nNote: Ensure to provide valid numeric IDs for channels and videos to retrieve accurate information. Use the tool to enhance your understanding of Vimeo channels and engage with content effectively.",
+                "required_parameters": [
+                    {
+                        "name": "category",
+                        "type": "STRING",
+                        "description": "The name of the category.",
+                        "default": ""
+                    },
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json or xml or php",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "GetVideosComment": {
+                "name": "GetVideosComment",
+                "description": "GetVideosComment: Efficiently retrieve user comments from specific videos across various platforms. This tool allows you to access and analyze viewer feedback by providing the video ID. It supports multiple formats for output and ensures comprehensive data retrieval, including the total number of comments and individual comment details. Ideal for content creators and marketers seeking insights from audience interactions.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json/php/xml",
+                        "default": ""
+                    },
+                    {
+                        "name": "video_id",
+                        "type": "STRING",
+                        "description": "The ID of the video.",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "NUMBER",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    }
+                ]
+            },
+            "GetAllChannels": {
+                "name": "GetAllChannels",
+                "description": "The GetAllChannels tool is designed to efficiently retrieve a comprehensive list of public channels available on Vimeo. Users can tailor their search based on subscription popularity or recent updates, and receive detailed information in a structured JSON format. This tool is ideal for users seeking to explore diverse content across various communities on Vimeo. Whether you are interested in general topics or specific categories like travel, cooking, or animation, GetAllChannels provides a gateway to a wide array of video channels to match your interests.",
+                "required_parameters": [
+                    {
+                        "name": "format",
+                        "type": "STRING",
+                        "description": "json/xml/php",
+                        "default": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "type": "STRING",
+                        "description": "Number of items to show on each page. Max 50.",
+                        "default": ""
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "sort",
+                        "type": "STRING",
+                        "description": "Method to sort by: newest, oldest, alphabetical, most_videos, most_subscribed, or most_recently_updated.",
+                        "default": "most_recently_updated"
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "The page number to show.",
+                        "default": ""
+                    }
+                ]
+            }
+        }
+    },
+    "1": {
+        "tool_name": "YTStream - Download YouTube Videos",
+        "category_name": "Tools",
+        "tool_guidelines": {
+            "Download/Stream": {
+                "name": "Download/Stream",
+                "description": "Download/Stream: This tool efficiently facilitates the streaming or downloading of videos. It supports a variety of formats and provides detailed metadata about the videos and their hosting channels, including titles, descriptions, durations, and more. The tool also offers functionalities to search for specific content or explore related videos and channels based on user queries. Enhanced features include error handling for smoother user experiences and comprehensive data retrieval for informed viewing choices.",
+                "required_parameters": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "description": "Youtube Video Id.",
+                        "default": "UxxajLWwzqY"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "cgeo",
+                        "type": "STRING",
+                        "description": "Country code in ISO 3166 format of the end user.",
+                        "default": ""
+                    }
+                ]
+            }
+        }
+    },
+    "2": {
+        "tool_name": "bitly",
+        "category_name": "Tools",
+        "tool_guidelines": {
+            "shorten": {
+                "name": "shorten",
+                "description": "The 'shorten' tool efficiently transforms lengthy URLs into concise, branded short links. It supports customization with your own domain and optional slashtags for enhanced brand visibility and memorability. The tool also provides functionalities to retrieve a list of your available branded domains and compare with standard shortening services like Bitly (note: Bitly endpoint may be deprecated). Ideal for social media sharing, marketing campaigns, and simplifying complex URLs. Ensure you have the necessary authentication details and parameters such as API keys to access full features.",
+                "required_parameters": [
+                    {
+                        "name": "longUrl",
+                        "type": "STRING",
+                        "description": "a long URL to be shortened (example: http://betaworks.com/).",
+                        "default": "http://www.mashape.com"
+                    }
+                ],
+                "optional_parameters": []
+            }
+        }
+    },
+    "3": {
+        "tool_name": "URL Link Shortener",
+        "category_name": "Advertising",
+        "tool_guidelines": {
+            "Get a list of domains": {
+                "name": "Get a list of domains",
+                "description": "This tool facilitates the retrieval of a list of active custom domains associated with your account for URL link shortening purposes. It supports the creation of branded short links using specified domains and keywords for enhanced tracking and customization. Note that an API key or authentication method may be required to access the list of domains. Ensure all necessary parameters are included in your request to avoid errors and ensure successful domain retrieval.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "active",
+                        "type": "BOOLEAN",
+                        "description": "Filter branded domains depending on whether they can be used to brand short links or not",
+                        "default": ""
+                    },
+                    {
+                        "name": "orderBy",
+                        "type": "STRING",
+                        "description": "Sorting criteria to apply to your branded domains collection among createdAt, updatedAt and fullName.",
+                        "default": "createdAt"
+                    },
+                    {
+                        "name": "last",
+                        "type": "STRING",
+                        "description": "The id of the last domain you fetched, see Infinite Scrolling section",
+                        "default": ""
+                    },
+                    {
+                        "name": "limit",
+                        "type": "NUMBER",
+                        "description": "How many branded domains to load",
+                        "default": "100"
+                    },
+                    {
+                        "name": "orderDir",
+                        "type": "STRING",
+                        "description": "Sorting direction to apply to your branded short links collection among desc and asc.",
+                        "default": "desc"
+                    },
+                    {
+                        "name": "type",
+                        "type": "STRING",
+                        "description": "Filter branded domains depending on their type (owned by user, user, or service domains like rebrand.ly, service)",
+                        "default": ""
+                    }
+                ]
+            },
+            "Create a new link": {
+                "name": "Create a new link",
+                "description": "Create a New Link: This tool streamlines the process of creating short, branded links for sharing URLs more efficiently. Users can shorten lengthy URLs using Bitly, create custom-branded links with Rebrand.ly, and manage their branded domains. The tool supports specifying custom slashtags and choosing from existing branded domains. It also provides feedback on successful link creation and guides on handling errors related to deprecated endpoints or authentication issues for domain retrieval. This enhanced functionality is ideal for sharing concise, memorable links in professional or personal communications.",
+                "required_parameters": [
+                    {
+                        "name": "destination",
+                        "type": "STRING",
+                        "description": "The destination URL you want your branded short link to point to",
+                        "default": "https://rapidapi.com/"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "domain[id]",
+                        "type": "STRING",
+                        "description": "The unique id of the branded domain. If not specified, rebrand.ly is used",
+                        "default": ""
+                    },
+                    {
+                        "name": "slashtag",
+                        "type": "STRING",
+                        "description": "The keyword portion of your branded short link",
+                        "default": ""
+                    },
+                    {
+                        "name": "domain[fullName]",
+                        "type": "STRING",
+                        "description": "The unique name of the branded domain, to be used in place of domain[id] in special cases. Precedence will be given to domain[id] value.",
+                        "default": ""
+                    }
+                ]
+            }
+        }
+    },
+    "4": {
+        "tool_name": "Streaming Availability",
+        "category_name": "Movies",
+        "tool_guidelines": {
+            "Genres (FREE)": {
+                "name": "Genres (FREE)",
+                "description": "Genres (FREE): Retrieve genre identifiers and their corresponding names that are supported by the system. This tool is essential for categorizing content based on genre, aiding in targeted searches and filtering operations. Ideal for developers and content managers needing precise genre classification to enhance content discoverability and organization.",
+                "required_parameters": [],
+                "optional_parameters": []
+            },
+            "Search By Title (FREE)": {
+                "name": "Search By Title (FREE)",
+                "description": "Search By Title (FREE) is a precise tool designed to find movies and series by their titles. It retrieves up to 20 results by default, ensuring that each item has a 100% match with the specified title. If more than 20 items match exactly, all matching results will be displayed without pagination support. This tool is ideal for quickly locating specific titles within a large database, providing an efficient solution for users seeking exact matches.\n\nParameters Description:\n- Maximum amount of items returned are 20, unless there are more than 20 shows with the exact given title input. In that case, all items that have a 100% match with the title will be returned.\n- No pagination is supported.",
+                "required_parameters": [
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "description": "Title to search for.",
+                        "default": "batman"
+                    },
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "description": "Regardless of this value, the given title is searched across all the platforms and all the countries. This parameter determines according to which country the streamingInfo field will be populated. Thus even if a show is not available in this country, It will be included in the results if it resembles with the given title, but the streaming information will not be available.",
+                        "default": "us"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "show_type",
+                        "type": "STRING",
+                        "description": "Type of shows to include in the results. Either `movie`, `series` or `all`. Default is `all`.",
+                        "default": "movie"
+                    },
+                    {
+                        "name": "output_language",
+                        "type": "STRING",
+                        "description": "2 letter iso code of the output language. Default is `en`. See the about page to see the list of languages supported.",
+                        "default": "en"
+                    }
+                ]
+            },
+            "Search Pro": {
+                "name": "Search Pro",
+                "description": "Search Pro is a comprehensive tool designed to explore and retrieve extensive information about TV shows and movies across various streaming platforms in specified countries. It allows users to apply multiple filters such as language, genre, and keywords to refine their search. The tool outputs detailed data including titles, ratings, streaming links, cast details, and more, making it an invaluable resource for discovering content tailored to user preferences. Additionally, it provides insights into the availability of shows on different services within the selected country, ensuring users have a complete overview of their viewing options.",
+                "required_parameters": [
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "description": "2 letter ISO 3166-1 alpha-2 country code of the country to search in. See the about page to check the supported countries.",
+                        "default": "us"
+                    },
+                    {
+                        "name": "services",
+                        "type": "STRING",
+                        "description": "A comma separated list of up to 8 services to search in. See `/v2/services` endpoint to get the supported services and their ids/names.\n\nSyntax of the values supplied in the list can be as the followings:\n\n`<sevice_id>`: Searches in the entire catalog of that service, including (if applicable) rentable, buyable shows or shows available through addons i.e. `netflix`, `prime`, `apple`\n\n`<sevice_id>.<offer_type>`: Only returns the shows that are available in that service with the given offer type. Valid offer type values are `subscription`, `free`, `rent`, `buy` and `addon`  i.e. `peacock.free` only returns the shows on Peacock that are free to watch, `prime.subscription` only returns the shows on Prime Video that are available to watch with a Prime subscription. `hulu.addon` only returns the shows on Hulu that are available via an addon,  `prime.rent` only returns the shows on Prime Video that are rentable.\n\n`<sevice_id>.addon.<addon_id>`: Only returns the shows that are available in that service with the given addon. Check `/v2/services` endpoint to fetch the available addons for a service. Some sample values are: `hulu.addon.hbo`,  `prime.addon.hbomaxus`.\n\nIf a service supports both `free` and `subscription`, then results included under `subscription` will always include the `free` shows as well.\n\nWhen multiple values are passed as a comma separated list, any show that satisfies at least one of the values will be included in the result.\n\nSome sample list values:\n\n`prime.rent,prime.buy,apple.rent,apple.buy`: Returns all the buyable/rentable shows on Amazon Prime Video and Apple TV.\n\n`prime.addon,prime.subscription`: Returns all the shows on Amazon Prime Video that are available through either a Prime Video subscription or a Prime Video Channel subscription.",
+                        "default": "netflix,prime.buy,hulu.addon.hbo,peacock.free"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "year_max",
+                        "type": "NUMBER",
+                        "description": "Maximum release/air year of the show.",
+                        "default": "2025"
+                    },
+                    {
+                        "name": "cursor",
+                        "type": "STRING",
+                        "description": "Cursor is used for pagination. After each request, the response includes a `hasMore` boolean field to tell if there are more results that did not fit the returned list size. If it is set as true, to get the rest of the result set, send a new request (with the same parameters for other fields such as show_type, services etc.), and set the cursor parameter as the `nextCursor` value of the previous request response. Do not forget to escape the cursor value before putting it into the query as it might contain characters such as `?`, `&`.\n\nThe first request naturally does not require a `cursor` parameter.",
+                        "default": ""
+                    },
+                    {
+                        "name": "desc",
+                        "type": "BOOLEAN",
+                        "description": "Use descending order?\n\nPossible values are `true` and `false`. Default value is `false`.",
+                        "default": "true"
+                    },
+                    {
+                        "name": "genres_relation",
+                        "type": "STRING",
+                        "description": "When more than one genre is supplied in `genres` parameter, `genres_relation` chooses the matching style against\n\nWhen `or`, the endpoint returns any show that has at least one of the given genres.\nWhen `and`, it only returns the shows that have all of the given genres.\n\nDefault value is `and`.",
+                        "default": "or"
+                    },
+                    {
+                        "name": "year_min",
+                        "type": "NUMBER",
+                        "description": "Minimum release/air year of the show.",
+                        "default": "2000"
+                    },
+                    {
+                        "name": "show_original_language",
+                        "type": "STRING",
+                        "description": "A 2 letter ISO 639-1 language code to only search within the shows whose original language matches with the provided language.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "genres",
+                        "type": "STRING",
+                        "description": "Comma separated list of genre ids to only search within the shows in those genres. See `/v2/genres` endpoint to see available genres and ids.\n\nWhen more than one genre supplied, set `genres_relation` parameter to specify between returning shows that have at least one of the given genres or returning shows that have all of the given genres",
+                        "default": "18,80"
+                    },
+                    {
+                        "name": "show_type",
+                        "type": "STRING",
+                        "description": "Type of shows to search in. Accepted values are `movie`, `series` or `all`. The default value is `all`.",
+                        "default": "movie"
+                    },
+                    {
+                        "name": "order_by",
+                        "type": "STRING",
+                        "description": "Determines the ordering of the results.\n\nPossible values are `original_title` and `year`. Default value is `original_title`",
+                        "default": "year"
+                    },
+                    {
+                        "name": "output_language",
+                        "type": "STRING",
+                        "description": "2 letter iso code of the output language. Default is `en`. See the about page to see the list of languages supported.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "keyword",
+                        "type": "STRING",
+                        "description": "A keyword to only search within the shows have that keyword in their overview or title.",
+                        "default": "zombie"
+                    }
+                ]
+            },
+            "Search Ultra": {
+                "name": "Search Ultra",
+                "description": "Search Ultra is a comprehensive streaming service search tool designed to locate movies and TV shows across various platforms in specified countries. It supports detailed filtering options including language, genre, and keywords, and provides extensive information about each title. This includes IMDb and TMDb IDs, ratings, links to streaming pages, cast details, runtime, posters, and availability on other services within the selected country. With a default setting of 25 items per page, Search Ultra ensures a user-friendly experience by delivering precise and relevant media information swiftly.",
+                "required_parameters": [
+                    {
+                        "name": "services",
+                        "type": "STRING",
+                        "description": "A comma separated list of up to 16 services to search in. See `/v2/services` endpoint to get the supported services and their ids/names.\n\nSyntax of the values supplied in the list can be as the followings:\n\n`<sevice_id>`: Searches in the entire catalog of that service, including (if applicable) rentable, buyable shows or shows available through addons i.e. `netflix`, `prime`, `apple`\n\n`<sevice_id>.<offer_type>`: Only returns the shows that are available in that service with the given offer type. Valid offer type values are `subscription`, `free`, `rent`, `buy` and `addon`  i.e. `peacock.free` only returns the shows on Peacock that are free to watch, `prime.subscription` only returns the shows on Prime Video that are available to watch with a Prime subscription. `hulu.addon` only returns the shows on Hulu that are available via an addon,  `prime.rent` only returns the shows on Prime Video that are rentable.\n\n`<sevice_id>.addon.<addon_id>`: Only returns the shows that are available in that service with the given addon. Check `/v2/services` endpoint to fetch the available addons for a service. Some sample values are: `hulu.addon.hbo`,  `prime.addon.hbomaxus`.\n\nIf a service supports both `free` and `subscription`, then results included under `subscription` will always include the `free` shows as well.\n\nWhen multiple values are passed as a comma separated list, any show that satisfies at least one of the values will be included in the result.\n\nSome sample list values:\n\n`prime.rent,prime.buy,apple.rent,apple.buy`: Returns all the buyable/rentable shows on Amazon Prime Video and Apple TV.\n\n`prime.addon,prime.subscription`: Returns all the shows on Amazon Prime Video that are available through either a Prime Video subscription or a Prime Video Channel subscription.",
+                        "default": "netflix,prime.buy,hulu.addon.hbo,peacock.free"
+                    },
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "description": "2 letter ISO 3166-1 alpha-2 country code of the country to search in. See the about page to check the supported countries.",
+                        "default": "us"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "max_imdb_vote_count",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "1000000"
+                    },
+                    {
+                        "name": "order_by",
+                        "type": "STRING",
+                        "description": "Determines the ordering of the results.\n\nPossible values are `original_title`, `imdb_vote_count`, `imdb_rating` and `year`. Default value is `original_title`",
+                        "default": "year"
+                    },
+                    {
+                        "name": "max_imdb_rating",
+                        "type": "NUMBER",
+                        "description": "Out of 100",
+                        "default": "90"
+                    },
+                    {
+                        "name": "min_imdb_rating",
+                        "type": "NUMBER",
+                        "description": "Out of 100",
+                        "default": "70"
+                    },
+                    {
+                        "name": "desc",
+                        "type": "BOOLEAN",
+                        "description": "Use descending order?\n\nPossible values are `true` and `false`. Default value is `false`.",
+                        "default": "true"
+                    },
+                    {
+                        "name": "keyword",
+                        "type": "STRING",
+                        "description": "A keyword to only search within the shows have that keyword in their overview or title.",
+                        "default": ""
+                    },
+                    {
+                        "name": "cursor",
+                        "type": "STRING",
+                        "description": "Cursor is used for pagination. After each request, the response includes a `hasMore` boolean field to tell if there are more results that did not fit the returned list size. If it is set as true, to get the rest of the result set, send a new request (with the same parameters for other fields such as show_type, services etc.), and set the cursor parameter as the `nextCursor` value of the previous request response. Do not forget to escape the cursor value before putting it into the query as it might contain characters such as `?`, `&`.\n\nThe first request naturally does not require a `cursor` parameter.",
+                        "default": ""
+                    },
+                    {
+                        "name": "year_max",
+                        "type": "NUMBER",
+                        "description": "Maximum release/air year of the show.",
+                        "default": "2025"
+                    },
+                    {
+                        "name": "min_imdb_vote_count",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "10000"
+                    },
+                    {
+                        "name": "year_min",
+                        "type": "NUMBER",
+                        "description": "Minimum release/air year of the show.",
+                        "default": "2000"
+                    },
+                    {
+                        "name": "show_original_language",
+                        "type": "STRING",
+                        "description": "A 2 letter ISO 639-1 language code to only search within the shows whose original language matches with the provided language.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "genres_relation",
+                        "type": "STRING",
+                        "description": "When more than one genre is supplied in `genres` parameter, `genres_relation` chooses the matching style against\n\nWhen `or`, the endpoint returns any show that has at least one of the given genres.\nWhen `and`, it only returns the shows that have all of the given genres.\n\nDefault value is `and`.",
+                        "default": "or"
+                    },
+                    {
+                        "name": "genres",
+                        "type": "STRING",
+                        "description": "Comma separated list of genre ids to only search within the shows in those genres. See `/v2/genres` endpoint to see available genres and ids.\n\nWhen more than one genre supplied, set `genres_relation` parameter to specify between returning shows that have at least one of the given genres or returning shows that have all of the given genres",
+                        "default": "18,80"
+                    },
+                    {
+                        "name": "output_language",
+                        "type": "STRING",
+                        "description": "2 letter iso code of the output language. Default is `en`. See the about page to see the list of languages supported.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "show_type",
+                        "type": "STRING",
+                        "description": "Type of shows to search in. Accepted values are `movie`, `series` or `all`. The default value is `all`.",
+                        "default": "movie"
+                    }
+                ]
+            },
+            "Search Basic (FREE)": {
+                "name": "Search Basic (FREE)",
+                "description": "Search Basic (FREE) is a comprehensive tool designed to explore and retrieve detailed information about TV shows and movies from a variety of streaming services within a specified country. It allows users to apply filters such as language, genre, and keywords to tailor search results. The tool offers a detailed output, including titles, IMDb and TMDb IDs, ratings, direct links to streaming pages, cast details, runtime, posters, and more. Additionally, it provides insights into the availability of content across different services, enhancing user access to desired shows or movies.",
+                "required_parameters": [
+                    {
+                        "name": "services",
+                        "type": "STRING",
+                        "description": "A comma separated list of up to 4 services to search in. See `/v2/services` endpoint to get the supported services and their ids/names.\n\nSyntax of the values supplied in the list can be as the followings:\n\n`<sevice_id>`: Searches in the entire catalog of that service, including (if applicable) rentable, buyable shows or shows available through addons i.e. `netflix`, `prime`, `apple`\n\n`<sevice_id>.<offer_type>`: Only returns the shows that are available in that service with the given offer type. Valid offer type values are `subscription`, `free`, `rent`, `buy` and `addon`  i.e. `peacock.free` only returns the shows on Peacock that are free to watch, `prime.subscription` only returns the shows on Prime Video that are available to watch with a Prime subscription. `hulu.addon` only returns the shows on Hulu that are available via an addon,  `prime.rent` only returns the shows on Prime Video that are rentable.\n\n`<sevice_id>.addon.<addon_id>`: Only returns the shows that are available in that service with the given addon. Check `/v2/services` endpoint to fetch the available addons for a service. Some sample values are: `hulu.addon.hbo`,  `prime.addon.hbomaxus`.\n\nIf a service supports both `free` and `subscription`, then results included under `subscription` will always include the `free` shows as well.\n\nWhen multiple values are passed as a comma separated list, any show that satisfies at least one of the values will be included in the result.\n\nSome sample list values:\n\n`prime.rent,prime.buy,apple.rent,apple.buy`: Returns all the buyable/rentable shows on Amazon Prime Video and Apple TV.\n\n`prime.addon,prime.subscription`: Returns all the shows on Amazon Prime Video that are available through either a Prime Video subscription or a Prime Video Channel subscription.",
+                        "default": "netflix,prime.buy,hulu.addon.hbo,peacock.free"
+                    },
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "description": "2 letter ISO 3166-1 alpha-2 country code of the country to search in. See the about page to check the supported countries.",
+                        "default": "us"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "cursor",
+                        "type": "STRING",
+                        "description": "Cursor is used for pagination. After each request, the response includes a `hasMore` boolean field to tell if there are more results that did not fit the returned list size. If it is set as true, to get the rest of the result set, send a new request (with the same parameters for other fields such as show_type, services etc.), and set the cursor parameter as the `nextCursor` value of the previous request response. Do not forget to escape the cursor value before putting it into the query as it might contain characters such as `?`, `&`.\n\nThe first request naturally does not require a `cursor` parameter.",
+                        "default": ""
+                    },
+                    {
+                        "name": "show_original_language",
+                        "type": "STRING",
+                        "description": "A 2 letter ISO 639-1 language code to only search within the shows whose original language matches with the provided language.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "genre",
+                        "type": "STRING",
+                        "description": "A genre id to only search within the shows in that genre. See `/v2/genres` endpoint to see available genres and ids.",
+                        "default": "18"
+                    },
+                    {
+                        "name": "keyword",
+                        "type": "STRING",
+                        "description": "A keyword to only search within the shows have that keyword in their overview or title.",
+                        "default": "zombie"
+                    },
+                    {
+                        "name": "output_language",
+                        "type": "STRING",
+                        "description": "2 letter iso code of the output language. Default is `en`. See the about page to see the list of languages supported.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "show_type",
+                        "type": "STRING",
+                        "description": "Type of shows to search in. Accepted values are `movie`, `series` or `all`. The default value is `all`.",
+                        "default": "movie"
+                    }
+                ]
+            },
+            "Get Basic (FREE)": {
+                "name": "Get Basic (FREE)",
+                "description": "Get Basic (FREE) is a versatile tool designed to retrieve essential details about TV shows and movies, including their streaming availability in specific countries. It utilizes IMDb or TMDb IDs to gather comprehensive information such as cast lists, synopses, and additional streaming platforms. This tool is ideal for users looking to explore available viewing options and learn more about specific titles efficiently.",
+                "required_parameters": [
+                    {
+                        "name": "country",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "us"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "imdb_id",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "tt1877830"
+                    },
+                    {
+                        "name": "output_language",
+                        "type": "STRING",
+                        "description": "2 letter iso code of the output language. Default is `en`. See the about page to see the list of languages supported.",
+                        "default": "en"
+                    },
+                    {
+                        "name": "tmdb_id",
+                        "type": "STRING",
+                        "description": "",
+                        "default": ""
+                    }
+                ]
+            }
+        }
+    },
+    "5": {
+        "tool_name": "Watchmode",
+        "category_name": "Entertainment",
+        "tool_guidelines": {
+            "Genres": {
+                "name": "Genres",
+                "description": "The Genres tool provides a comprehensive mapping of genre names to their respective IDs, useful for categorizing and searching content. It includes genre IDs from TheMovieDB.org API (tmdb_id) when available. This tool is essential for users looking to filter or search for media content by specific genres.\n\nParameters:\n- `genre_name`: Name of the genre.\n- `genre_id`: The internal ID for the genre.\n- `tmdb_id` (optional): The corresponding genre ID used by TheMovieDB.org API.\n\nThis optimized description clarifies the functionality of the tool, specifying the optional nature of the tmdb_id, and emphasizing the tool's utility in filtering and searching media content by genre.",
+                "required_parameters": [],
+                "optional_parameters": []
+            },
+            "Titles with Changed Sources": {
+                "name": "Titles with Changed Sources",
+                "description": "This tool provides a comprehensive listing of movie and series titles that have undergone changes in their streaming sources within a specified date range. It allows users to track updates in streaming availability, ensuring they have the most current information on where to find their favorite content. Ideal for keeping up with the dynamic nature of online streaming platforms, this tool supports queries based on genres, release dates, and specific regions, making it an essential resource for both casual viewers and industry professionals.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "start_date",
+                        "type": "NUMBER",
+                        "description": "By default, the changes API will return changes since the beginning of yesterday. Populate this parameter to manually set a start date to include changes from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021), or for more granular results down to the second YYYYMMDDHHMMSS (eg 20210101123459 for January 1st, 2021 12:24pm and 59 seconds). Hours are in 24 hour format and in Eastern Standard Time. Month, day, hour, minutes and seconds use leading zeros for single digit values.",
+                        "default": ""
+                    },
+                    {
+                        "name": "limit",
+                        "type": "NUMBER",
+                        "description": "Set how many titles to return per page, default and maximum is 250.",
+                        "default": "50"
+                    },
+                    {
+                        "name": "end_date",
+                        "type": "NUMBER",
+                        "description": "By default, the changes API will return changes since the beginning of yesterday. Populate this parameter to manually set a end date to include changes from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021), or for more granular results down to the second YYYYMMDDHHMMSS (eg 20210101123459 for January 1st, 2021 12:24pm and 59 seconds). Hours are in 24 hour format and in Eastern Standard Time. Month, day, hour, minutes and seconds use leading zeros for single digit values.",
+                        "default": ""
+                    },
+                    {
+                        "name": "regions",
+                        "type": "STRING",
+                        "description": "Pass in the 2 character region code (eg US) for the country you want to get titles with changed sources from. There is a limit to 1 region on this endpoint, if you leave this field blank US changes will be returned only.",
+                        "default": "US,CA"
+                    },
+                    {
+                        "name": "types",
+                        "type": "STRING",
+                        "description": "Filter result to only include certain types of titles. Pass a single type or pass multiple types comma delimited. Possible values: movie, tv_series, tv_special, tv_miniseries, short_film",
+                        "default": "movie,tv_series"
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "Set the page of results you want to return, if this isn't set you will always get page 1 returned.",
+                        "default": "1"
+                    }
+                ]
+            },
+            "Streaming Release Dates": {
+                "name": "Streaming Release Dates",
+                "description": "The Streaming Release Dates tool provides an up-to-date listing of movies and TV shows recently released or soon to be released on major streaming platforms such as Netflix, Hulu, Prime Video, and Disney+. It features an 'is_original' field to indicate whether the content is an exclusive original release of the respective streaming service. The tool supports queries for US release dates, with most content released simultaneously across supported countries. Users can search for specific genres, years, and ratings to find tailored streaming options. This tool is ideal for viewers looking to stay current with the latest streaming content available in their region.\n\nNote: The tool's response includes crucial details like title, streaming service availability, and release dates, ensuring users have all the necessary information to plan their watching schedule effectively.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "start_date",
+                        "type": "NUMBER",
+                        "description": "By default, this endpoint will return release dates from the current date through the next 30 days. Populate this parameter to manually set a start date to include releases from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021), or for more granular results down to the second YYYYMMDDHHMMSS (eg 20210101123459 for January 1st, 2021 12:24pm and 59 seconds). Hours are in 24 hour format and in Eastern Standard Time. Month, day, hour, minutes and seconds use leading zeros for single digit values.",
+                        "default": "20220301"
+                    },
+                    {
+                        "name": "limit",
+                        "type": "NUMBER",
+                        "description": "Set how many release dates to return, default is 500.",
+                        "default": "250"
+                    },
+                    {
+                        "name": "end_date",
+                        "type": "NUMBER",
+                        "description": "By default, this endpoint will return release dates from the current date through the next 30 days. Populate this parameter to manually set a end date to include releases from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021), or for more granular results down to the second YYYYMMDDHHMMSS (eg 20210101123459 for January 1st, 2021 12:24pm and 59 seconds). Hours are in 24 hour format and in Eastern Standard Time. Month, day, hour, minutes and seconds use leading zeros for single digit values.",
+                        "default": "20220312"
+                    }
+                ]
+            },
+            "Title Streaming Sources": {
+                "name": "Title Streaming Sources",
+                "description": "Title Streaming Sources provides comprehensive access to streaming availability information for movies and TV shows across various platforms within the USA. Users can retrieve direct links to stream titles on web, iOS, and Android devices. For free users, the service is limited to USA-only sources, while paid users can access deep links for a more integrated viewing experience. The tool supports queries for streaming services offering specific titles, including HD availability, and also provides detailed metadata such as plot, release date, and cast information.",
+                "required_parameters": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "description": "This ID can be the Watchmode ID of the title (returned by other endpoints such as the list-titles endpoint), or found in the mapping file: https://api.watchmode.com/datasets/title_id_map.csv.\n\nYou can also pass an IMDB ID here instead, or a TMDB type and TMDB ID combination. For example, the TMDB combination for The Shawshank Redemption is movie-278 and for Breaking Bad is tv-1396. ",
+                        "default": "3173903"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Title Seasons": {
+                "name": "Title Seasons",
+                "description": "Title Seasons is a versatile tool designed to provide detailed information about TV shows and mini-series. It not only lists all the seasons of a show but also offers extensive data including cast, plot summaries, streaming availability in specific regions, and other relevant metadata like reviews and ratings. This tool is ideal for users looking to explore comprehensive details about their favorite shows, ensuring they have all the information needed to enhance their viewing experience.",
+                "required_parameters": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "description": "This ID can be the Watchmode ID of the title (returned by other endpoints such as the list-titles endpoint), or found in the mapping file: https://api.watchmode.com/datasets/title_id_map.csv.\n\nYou can also pass an IMDB ID here instead, or a TMDB type and TMDB ID combination. For example, the TMDB combination for The Shawshank Redemption is movie-278 and for Breaking Bad is tv-1396. ",
+                        "default": "3173903"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Title Cast & Crew": {
+                "name": "Title Cast & Crew",
+                "description": "Title Cast & Crew: Retrieve comprehensive details of all individuals associated with a specific film or television title, including actors (cast) and production team members (crew) such as directors, writers, and cinematographers. For more granular information about any individual, utilize the person-id with the /person/ endpoint. This tool is ideal for gaining in-depth insights into the personnel involved in the creation of entertainment content.",
+                "required_parameters": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "description": "This ID can be the Watchmode ID of the title (returned by other endpoints such as the list-titles endpoint), or found in the mapping file: https://api.watchmode.com/datasets/title_id_map.csv.\n\nYou can also pass an IMDB ID here instead, or a TMDB type and TMDB ID combination. For example, the TMDB combination for The Shawshank Redemption is movie-278 and for Breaking Bad is tv-1396. ",
+                        "default": "3173903"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Networks": {
+                "name": "Networks",
+                "description": "The \"Networks\" tool provides an extensive listing of TV networks available through the /title endpoint. It is designed to help users identify which networks offer specific titles, facilitating easier access to desired content. This tool is essential for users looking to streamline their search for TV shows and movies across various networks. Whether you are researching availability or planning viewing schedules, this tool offers a reliable source for network-related queries.",
+                "required_parameters": [],
+                "optional_parameters": []
+            },
+            "New Titles": {
+                "name": "New Titles",
+                "description": "The New Titles tool efficiently identifies and lists new titles added to Watchmode within a specified date range. This tool is ideal for users seeking to discover the latest additions and can be combined with the /v1/title/ endpoint for detailed information on each title. Use this tool to stay updated on the latest content across various streaming services supported by Watchmode.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "Set the page of results you want to return, if this isn't set you will always get page 1 returned.",
+                        "default": "1"
+                    },
+                    {
+                        "name": "types",
+                        "type": "STRING",
+                        "description": "Filter result to only include certain types of titles. Pass a single type or pass multiple types comma delimited. Possible values: movie, tv_series, tv_special, tv_miniseries, short_film",
+                        "default": "movie,tv_series"
+                    },
+                    {
+                        "name": "limit",
+                        "type": "NUMBER",
+                        "description": "Set how many titles to return per page, default and maximum is 250.",
+                        "default": "50"
+                    },
+                    {
+                        "name": "end_date",
+                        "type": "NUMBER",
+                        "description": "By default, the changes API will return changes since the beginning of yesterday. Populate this parameter to manually set a end date to include changes from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021).",
+                        "default": ""
+                    },
+                    {
+                        "name": "start_date",
+                        "type": "NUMBER",
+                        "description": "By default, the changes API will return changes since the beginning of yesterday. Populate this parameter to manually set a start date to include changes from a specific date range, format is YYYYMMDD (eg 20210101 for January 1st, 2021).",
+                        "default": ""
+                    }
+                ]
+            },
+            "Autocomplete Search": {
+                "name": "Autocomplete Search",
+                "description": "Autocomplete Search: Rapidly locate movie titles and individual names using partial or full input. Ideal for creating autocomplete features, this tool not only identifies titles and people but also categorizes results as either a 'title' or 'person'. For movies, it returns an image of the movie poster, and for individuals, a headshot is provided. This streamlined search capability enhances user experience by delivering quick, visually enriched results.",
+                "required_parameters": [
+                    {
+                        "name": "search_value",
+                        "type": "STRING",
+                        "description": "The phrase to search for, can be a full title or person name, or a partial phrase. For example searching for \\\"The sha\\\" will find the movie \\\"The Shawshank Redemption\\\".",
+                        "default": "Breaking Bad"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "search_type",
+                        "type": "NUMBER",
+                        "description": "Set this to 1 to include titles and people in results. Set this to 2 to include titles only. Set this to 3 to include movies only. Set this to 4 to include TV only. Set this to 5 to include people only. By default this is set to 1.",
+                        "default": "1"
+                    }
+                ]
+            },
+            "Sources": {
+                "name": "Sources",
+                "description": "Sources is a comprehensive tool that provides a detailed listing of all streaming sources supported by Watchmode. Users can efficiently filter these sources by type, such as subscription-based, free, or others, to tailor the results to their specific viewing preferences. This tool is ideal for users seeking to identify available streaming platforms for various content types within specific regions or based on access type.\n\nParameters Description:\n- Optional: `type` (string) - Specifies the type of streaming source to filter by, such as 'subscription', 'free', etc.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "regions",
+                        "type": "STRING",
+                        "description": "Pass one of the region values (eg. US), or multiple regions comma delimited to only return sources active in those regions. Currently supported regions: US, GB, CA, AU",
+                        "default": "US,CA"
+                    },
+                    {
+                        "name": "types",
+                        "type": "STRING",
+                        "description": "Pass one of the following values, or multiple comma separated values to only return certain types of streaming sources:\nsub, free, purchase, tve. \\\\\\\"sub\\\\\\\" means the service is a subscription service, \\\\\\\"tve\\\\\\\" means the service is a TV channel app.",
+                        "default": "sub,free"
+                    }
+                ]
+            },
+            "Search": {
+                "name": "Search",
+                "description": "The Search tool efficiently locates titles and individuals across various external databases such as IMDB and TheMovieDB.org. Users can search by either external IDs or names to retrieve comprehensive arrays of results, including titles or people. Each result includes essential identifiers necessary for further interactions with our API endpoints. This tool is particularly helpful for obtaining Watchmode IDs, which can then be utilized in other API functionalities to access detailed information and perform more complex queries.\nParameters Description: Utilize `search_value` to specify the search term (e.g., 'Breaking Bad') and `search_field` to define the type of search (e.g., 'name'). The tool returns an array of result objects related to the query, which can be titles or individuals, depending on the search parameters set.",
+                "required_parameters": [
+                    {
+                        "name": "search_field",
+                        "type": "STRING",
+                        "description": "The field for us to search in, either a 3rd party ID or \\\\\\\"name\\\\\\\" which will search for a movie/show title or a person's name depending on the type(s) set. Must be one of the following options:\nimdb_id, tmdb_person_id, tmdb_movie_id, tmdb_tv_id, name.",
+                        "default": "name"
+                    },
+                    {
+                        "name": "search_value",
+                        "type": "STRING",
+                        "description": "The value we should search for. For example, if you set search_field to imdb_id, this would be the IMDB title/person ID, eg. tt0944947.",
+                        "default": "Breaking Bad"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "types",
+                        "type": "STRING",
+                        "description": "Pass one of the following values, or multiple comma separated values to only return certain types:\ntv, movie, person.",
+                        "default": "tv"
+                    }
+                ]
+            },
+            "List Titles": {
+                "name": "List Titles",
+                "description": "List Titles: Discover and Access Detailed Information on Movies and TV Shows\n\nThis enhanced tool allows you to efficiently search and retrieve comprehensive listings of movies and TV shows based on a variety of customizable parameters. Whether you're looking for specific genres, streaming availability in different regions, or detailed information like cast and synopsis, this tool provides targeted results to meet your needs. Ideal for users seeking to explore available titles on platforms like Netflix and Amazon Prime within the USA, it supports refined searches that can include filters for genre, release years, and specific streaming services.\n\nKey Features:\n- Advanced search capabilities that allow for granular queries such as \"Horror Movies Streaming on Netflix in the USA\".\n- Access to a wide range of details including title, streaming service, availability, cast, ratings, and synopses.\n- Pagination support that handles large datasets effectively, returning up to 250 pages per query.\n- Specialized endpoints for users on free plans with streaming source data limited to the USA.\n\nThis tool is perfect for developers aiming to integrate comprehensive media title searches into their applications, providing both broad overviews and detailed metadata for an extensive range of titles available across multiple regions and platforms.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "genres",
+                        "type": "STRING",
+                        "description": "Filter results to only include certain genre(s). Pass in a single genre id (which you would get from the /v1/genres/ endpoint, or multiple comma separated.",
+                        "default": "4,9"
+                    },
+                    {
+                        "name": "limit",
+                        "type": "NUMBER",
+                        "description": "Set how many titles to return per page, default and maximum is 250.",
+                        "default": "250"
+                    },
+                    {
+                        "name": "source_ids",
+                        "type": "STRING",
+                        "description": "Pass an individual ID for a source (returned from the /sources/ endpoint) to filter the results to titles available on that source. Pass multiple values comma separated to return titles available on one of the sources you pass in.\nNote: If you populate this you can only set a single region, and if you set no region US will be set by default.",
+                        "default": "23,206"
+                    },
+                    {
+                        "name": "source_types",
+                        "type": "STRING",
+                        "description": "Filter results to only include titles that are available on a specific type(s) of source (such a subscription, or TV Everywhere channel apps, etc). By default all are selected, pass one or multiple (comma delimited) of these values: sub, rent, buy, free, tve\nNote: If you populate this you can only set a single region, and if you set no region US will be set by default.",
+                        "default": "sub,free"
+                    },
+                    {
+                        "name": "types",
+                        "type": "STRING",
+                        "description": "Filter result to only include certain types of titles. Pass a single type or pass multiple types comma delimited. Possible values: movie, tv_series, tv_special, tv_miniseries, short_film",
+                        "default": "movie,tv_series"
+                    },
+                    {
+                        "name": "regions",
+                        "type": "STRING",
+                        "description": "Pass one of the region values (eg. US), or multiple regions comma delimited to only return sources active in those regions. Currently supported regions: US, GB, CA, AU\nNote: If you populate the source_ids or source_types you can only set a single region, and if you set no region US will be set by default. ",
+                        "default": "US"
+                    },
+                    {
+                        "name": "sort_by",
+                        "type": "STRING",
+                        "description": "Sort order of results, possible values: relevance_desc, relevance_asc, popularity_desc, popularity_asc, release_date_desc, release_date_asc, title_desc, title_asc. Default value is: relevance_desc.",
+                        "default": "relevance_desc"
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "Set the page of results you want to return, if this isn't set you will always get page 1 returned.",
+                        "default": "1"
+                    },
+                    {
+                        "name": "network_ids",
+                        "type": "STRING",
+                        "description": "Pass an individual ID for a TV network (returned from the /networks/ endpoint) to filter the results to titles the originally aired on that TV network. Pass multiple values comma separated to return titles that aired on one of the networks you passed in.",
+                        "default": "1,8,12"
+                    },
+                    {
+                        "name": "release_date_start",
+                        "type": "NUMBER",
+                        "description": "Set the start of a range for when the title was released (the initial release of the movie or show, not necessarily when it was released on a streaming service). For example, to only include releases on or after January 1, 2001 set this to 20010101",
+                        "default": "20010101"
+                    },
+                    {
+                        "name": "release_date_end",
+                        "type": "NUMBER",
+                        "description": "Set the end of a range for when the title was released (the initial release of the movie or show, not necessarily when it was released on a streaming service). For example, to only include releases on or before December 11, 2020 set this to 20201211",
+                        "default": "20201211"
+                    }
+                ]
+            },
+            "Title Details": {
+                "name": "Title Details",
+                "description": "Title Details is a robust tool designed to fetch detailed information about movies, series, or shows using the Watchmode universal ID. It provides extensive data including streaming availability in specified regions, main cast members, plot summaries, release dates, and additional metadata. This tool caters to users seeking in-depth details about titles for viewing or analytical purposes.\n\nKey Features:\n- Fetch streaming availability across various services in specified regions.\n- Access detailed metadata such as cast, plot, release date, and more.\n- Utilize the Watchmode universal ID for precise search results.\n\nThis enhanced description outlines the tool's capabilities more comprehensively, ensuring users understand its full potential and the breadth of information it can provide.",
+                "required_parameters": [
+                    {
+                        "name": "id",
+                        "type": "STRING",
+                        "description": "This ID can be the Watchmode ID of the title (returned by other endpoints such as the list-titles endpoint), or found in the mapping file: https://api.watchmode.com/datasets/title_id_map.csv.\n\nYou can also pass an IMDB ID here instead, or a TMDB type and TMDB ID combination. For example, the TMDB combination for The Shawshank Redemption is movie-278 and for Breaking Bad is tv-1396. ",
+                        "default": "3173903"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "language",
+                        "type": "STRING",
+                        "description": "Two letter iso_639_1 language code. Return the title and plot overview in the language of your choosing (default is EN). If this is set, and not to EN, then an additional field called english_title will be returned with the title in English if available.\n",
+                        "default": "ES"
+                    }
+                ]
+            }
+        }
+    },
+    "6": {
+        "tool_name": "OTT details",
+        "category_name": "Movies",
+        "tool_guidelines": {
+            "Advanced Search": {
+                "name": "Advanced Search",
+                "description": "The Advanced Search tool allows users to comprehensively search for movies or TV shows using a variety of parameters including release year, IMDb rating, genre, and language. It provides detailed information such as streaming availability, cast details, and synopses, helping users locate and learn about specific titles across multiple streaming platforms in different regions. This tool is designed to offer precise search capabilities to enhance user experience in finding and accessing content.",
+                "required_parameters": [],
+                "optional_parameters": [
+                    {
+                        "name": "start_year",
+                        "type": "NUMBER",
+                        "description": "Enter any year between 1970 to 2020 to get results.",
+                        "default": "1970"
+                    },
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "1"
+                    },
+                    {
+                        "name": "max_imdb",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "7.8"
+                    },
+                    {
+                        "name": "type",
+                        "type": "STRING",
+                        "description": "Enter type 'movie' or 'show'",
+                        "default": "movie"
+                    },
+                    {
+                        "name": "sort",
+                        "type": "STRING",
+                        "description": "Enter values highestrated , lowestrated , latest , oldest to  sort results accodingly .",
+                        "default": "latest"
+                    },
+                    {
+                        "name": "min_imdb",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "6"
+                    },
+                    {
+                        "name": "genre",
+                        "type": "STRING",
+                        "description": "use comma seperated values to enter multiple genre eg : action,horror",
+                        "default": "action"
+                    },
+                    {
+                        "name": "language",
+                        "type": "STRING",
+                        "description": "use comma seperated values to enter multiple values , eg : english,german",
+                        "default": "english"
+                    },
+                    {
+                        "name": "end_year",
+                        "type": "NUMBER",
+                        "description": "Enter any year from 1970 to 2020 to  get results.",
+                        "default": "2020"
+                    }
+                ]
+            },
+            "New Arrivals": {
+                "name": "New Arrivals",
+                "description": "Discover the latest movies and TV shows across multiple streaming platforms with the New Arrivals tool. This versatile tool not only identifies recent additions but also allows users to filter by genre, year, and streaming service. Additionally, it provides detailed information about specific titles, including streaming availability, cast, crew, and other relevant metadata. Whether you're looking for a specific type of movie or just browsing new content, New Arrivals makes it easy to stay updated and informed about the latest streaming options.\n\nThis enhanced description clarifies the tool's capabilities and the breadth of information it can provide, making it easier for users to understand how to utilize the tool effectively for their specific needs.",
+                "required_parameters": [
+                    {
+                        "name": "region",
+                        "type": "STRING",
+                        "description": "Use 'IN' for India and 'US' for USA , * currently we support only US and Indian region.",
+                        "default": "US"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "",
+                        "default": "1"
+                    }
+                ]
+            },
+            "Basic Info": {
+                "name": "Basic Info",
+                "description": "The Basic Info tool provides comprehensive details about movies, TV shows, and cast members. It retrieves information such as names, professions, birth and death years, biographies, posters, and notable titles. This tool is ideal for users seeking in-depth background information and visual content related to entertainment figures and media products. It supports queries for specific details and offers a rich dataset for enhancing user knowledge about the entertainment industry.",
+                "required_parameters": [
+                    {
+                        "name": "peopleid",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "nm0000375"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Search": {
+                "name": "Search",
+                "description": "This endpoint is designed to efficiently search for movies or TV shows by title. It allows users to retrieve detailed information including streaming availability, cast, plot, and other relevant metadata. Ideal for quickly finding specific titles or exploring options based on partial title matches. Perfect for integration into applications needing comprehensive media search capabilities.\n\nParameters Description:\n- title: The title of the movie or TV show to search for.",
+                "required_parameters": [
+                    {
+                        "name": "title",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "Endgame"
+                    }
+                ],
+                "optional_parameters": [
+                    {
+                        "name": "page",
+                        "type": "NUMBER",
+                        "description": "*Maximum number of pages returned is 10 ",
+                        "default": "1"
+                    }
+                ]
+            },
+            "Additional Title Details": {
+                "name": "Additional Title Details",
+                "description": "Access comprehensive information about movies and TV shows with the Additional Title Details tool. This tool provides a wealth of details including reviews, quotes, plot summaries, voting statistics, trailer URLs, and complete cast and crew data. Ideal for users looking to delve deeper into their favorite titles or discover new ones, this tool ensures you have all the information you need at your fingertips, enhancing your viewing experience or decision-making process for what to watch next.\n\nNote: The tool accepts parameters such as IMDb ID or title name to fetch specific details about the desired movie or TV show.",
+                "required_parameters": [
+                    {
+                        "name": "imdbid",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "tt7286456"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Title Details": {
+                "name": "Title Details",
+                "description": "Title Details is an advanced tool designed to fetch detailed information about movies and TV shows. It provides extensive data including IMDb ID, title, genre, runtime, IMDb rating, language, synopsis, type, image URL, and streaming platform availability. This tool is ideal for users seeking in-depth insights into specific titles, helping them make informed viewing choices based on a variety of parameters like availability on streaming services, cast details, and other relevant metadata.\n\nParameters Description:\n- `imdbid`: The unique IMDb identifier for the movie or TV show.\n- `title`: The name of the movie or TV show.\n- `genre`: The genre(s) associated with the title.\n- `runtime`: The duration of the title.\n- `imdbrating`: The IMDb rating of the title.\n- `language`: The primary language(s) of the title.\n- `synopsis`: A brief summary or description of the title.\n- `type`: Specifies whether the title is a movie or a TV show.\n- `imageurl`: URL to an image or poster of the title.\n- `Streaming platforms info`: Information about which streaming services offer the title and in which countries they are available.",
+                "required_parameters": [
+                    {
+                        "name": "imdbid",
+                        "type": "STRING",
+                        "description": "",
+                        "default": "tt9904802"
+                    }
+                ],
+                "optional_parameters": []
+            },
+            "Params": {
+                "name": "Params",
+                "description": "Params is a dynamic tool designed to retrieve a comprehensive array of parameters that can be utilized in conducting Advanced Searches across various databases. This tool simplifies the process of specifying search criteria by offering predefined parameters based on the user's query context, enhancing the accuracy and relevance of search results. Ideal for filtering and refining search outputs in fields such as entertainment, academic research, or any specialized database, Params ensures that users can efficiently narrow down to the most pertinent information or media as per their specific needs.",
+                "required_parameters": [
+                    {
+                        "name": "param",
+                        "type": "STRING",
+                        "description": "input 'genre' or 'language' to get array of genre or languages that can be used as filter in advanced search .",
+                        "default": "genre"
+                    }
+                ],
+                "optional_parameters": []
+            }
+        }
+    }
+}
